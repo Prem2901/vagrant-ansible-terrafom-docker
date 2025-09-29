@@ -4,7 +4,6 @@ from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
 import os
 import random
-
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "change-me-please")
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds=0)  # disable static cache during dev
